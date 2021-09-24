@@ -1,0 +1,3 @@
+﻿  vedmak.c
+D:\programming\Informatics-and-Programming\TasksInTerminalClass\SolutionTasksInTerminal\vedmaky_zaplatite\vedmak.c(47,8): warning C4013: _getch: нет определения; предполагается "extern" с возвратом типа "int"
+  vedmaky_zaplatite.vcxproj -> D:\programming\Informatics-and-Programming\TasksInTerminalClass\SolutionTasksInTerminal\Debug\vedmaky_zaplatite.exe
