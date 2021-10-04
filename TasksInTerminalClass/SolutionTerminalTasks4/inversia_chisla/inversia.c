@@ -27,16 +27,22 @@ int main()
 			}
 			isError = (number < 0);
 
-	
-				while (number > 10)
+				while (number % 10 == 0)
 				{
-					if (number > 10)
+					number = number * 0.1;
+				}
+				while (number > 10)
+
+	
+					while (number > 10)
 					{
-						c = number % 10;
-						printf("%d", c);
-						number = number / 10;
-					}
-				} printf("%d\n", number);
+						if (number > 10)
+						{
+							c = number % 10;
+							printf("%d", c);
+							number = number / 10;
+						}
+					} printf("%d\n", number);
 
 		} while (isError);
 
