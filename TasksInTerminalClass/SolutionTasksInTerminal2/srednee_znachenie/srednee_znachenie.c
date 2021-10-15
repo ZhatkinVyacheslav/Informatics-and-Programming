@@ -18,41 +18,31 @@ int main() {
 	switch (f) {
 	
 	case 1:
-		{
 			mean = (x + y + z) / 3;
-			printf("arifmetic mean of the number is %f", mean);
-		}
+			printf("arifmetic mean of the number is %f", mean);	
 	break;
 	
 
 	case 2: 
-		{
 			mean = (pow(x, 2) + pow(y, 2) + pow(z, 2)) / 3;
-			printf("the mean of the squares of these numbers is %f", mean);
-		}
+			printf("the mean of the squares of these numbers is %f", mean);		
 	break;
 
 
 	case 3: 
-		{
 			mean = (fabs(x) + fabs(y) + fabs(z)) / 3;
 			printf("the mean of the roots of numbers is %f", mean);
-		}
 	break;
 
 
 	case 4:
-		{
 			mean = (sqrt(x) + sqrt(y) + sqrt(z)) / 3;
 			printf("the mean of the sqrt of numbers %f", mean);
-		}
 	break;
 
 
 	default:
-		{
 			printf("You was must input only number <1>, <2>, <3> or <4>, try again please");			
-		}
 		break;
 	}
 
