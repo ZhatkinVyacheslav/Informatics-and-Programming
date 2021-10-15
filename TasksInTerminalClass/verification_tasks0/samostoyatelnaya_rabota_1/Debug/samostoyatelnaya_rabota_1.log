@@ -1,0 +1,7 @@
+﻿  main.c
+D:\papka\Informatics-and-Programming\TasksInTerminalClass\verification_tasks0\samostoyatelnaya_rabota_1\main.c(18,7): warning C4013: srand: нет определения; предполагается "extern" с возвратом типа "int"
+D:\papka\Informatics-and-Programming\TasksInTerminalClass\verification_tasks0\samostoyatelnaya_rabota_1\main.c(20,23): warning C4013: malloc: нет определения; предполагается "extern" с возвратом типа "int"
+D:\papka\Informatics-and-Programming\TasksInTerminalClass\verification_tasks0\samostoyatelnaya_rabota_1\main.c(26,16): warning C4013: rand: нет определения; предполагается "extern" с возвратом типа "int"
+D:\papka\Informatics-and-Programming\TasksInTerminalClass\verification_tasks0\samostoyatelnaya_rabota_1\main.c(26,28): warning C4244: =: преобразование "int" в "float", возможна потеря данных
+D:\papka\Informatics-and-Programming\TasksInTerminalClass\verification_tasks0\samostoyatelnaya_rabota_1\main.c(65,8): warning C4013: _getch: нет определения; предполагается "extern" с возвратом типа "int"
+  samostoyatelnaya_rabota_1.vcxproj -> D:\papka\Informatics-and-Programming\TasksInTerminalClass\verification_tasks0\Debug\samostoyatelnaya_rabota_1.exe

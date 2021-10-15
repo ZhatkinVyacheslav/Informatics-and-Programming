@@ -19,11 +19,6 @@ int main()
 
 	mass = (float*)malloc(size * sizeof(float));
 	
-	/*
-	printf("¬ведите на сколько будет совершЄн сдвиг:");
-	scanf_s("%d", &sd);
-	*/
-
 
 	printf("первоначальный массив :");
 	for (i = 0; i < size; i++)
@@ -37,6 +32,32 @@ int main()
 	{		
 		printf("%0.1f  ", mass[i]);
 	} 
+
+	printf("\n¬ведите на сколько будет совершЄн сдвиг:");
+	scanf_s("%d", &sd);
+	printf("\nсдвиг на %d массив :", sd);
+	for (i = 0; i < size; i++)
+	{
+		n = i + sd;
+		if (n > size)
+		{
+			n = 0 + (n - size);
+		}
+		printf("%0.1f  ", mass[n]);
+	}
+
+	printf("\nинвЄрс сдвинутого массива: ");
+	for (i = size - 1; i > -1; i--)
+	{
+		n = i + sd;
+		if (n > size)
+		{
+			n = 0 + (n - size);
+		}
+		printf("%0.1f  ", mass[n]);
+	}
+	
+
 
 	
 
