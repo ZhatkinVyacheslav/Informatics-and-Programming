@@ -39,6 +39,7 @@ int main()
 	for (i = 0; i < size; i++)
 	{
 		n = i + sd;
+		mass = (float*)malloc(n * sizeof(float));
 		if (n > size)
 		{
 			n = 0 + (n - size);
@@ -59,9 +60,7 @@ int main()
 	
 
 
-	
-
-
+	free(mass);
 	_getch();
 	return (0);
 }
