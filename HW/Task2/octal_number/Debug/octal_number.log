@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\prog\Informatics-and-Programming\HW\Task2\octal_number\main.cpp(186): warning C4715: Octal::operator-: значение возвращается не при всех путях выполнения
+  octal_number.vcxproj -> D:\prog\Informatics-and-Programming\HW\Task2\Debug\octal_number.exe
