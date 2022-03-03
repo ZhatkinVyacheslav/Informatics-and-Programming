@@ -12,6 +12,18 @@ private:
 	int size;
 
 public:
+
+	Octal(const Octal& obj)
+	{
+		size = obj.size;
+		number = new unsigned char[size];
+	
+		for (int i = 0; i < size; i++)
+		{
+			number[i] = obj.number[i];
+		}
+	}
+
 	Octal(string mass)
 	{
 		int size0 = 0;
@@ -123,20 +135,21 @@ public:
 
 	Octal operator+(const Octal& right)
 	{
+		int num = 0;
 		string sumnum = "";
 		int sumsize, buffer1, buffer2, buffer3, over7 = 0;
 		if (this->size > right.size) sumsize = this->size;
 		else sumsize = right.size;
 		for (int i = 0; i < sumsize; i++)
 		{
-			sumnum = sumnum + "0";
+			sumnum = sumnum + "";
 		}
 
 		Octal left(sumnum);
 		for (int i = 0; i < left.size; i++)
 		{
-			buffer1 = number[i] - '0';
-			buffer2 =right.number[i] - '0';
+			buffer1 = (number[i] - '0') + (num * 10);
+			buffer2 =(right.number[i] - '0') + (num * 10);
 			buffer3 = buffer1 + buffer2 + over7;
 			if (buffer3 > 7)
 			{
@@ -236,22 +249,22 @@ public:
 		cout << "\tvalue = " << size << "\n";
 	}
 
-	/*~Octal()
+	~Octal()
 	{
 		delete[] number;
 		cout << " \n\nThe end...";
-	}*/
+	}
 };
 
 int main()
 {
-	string chislo1 = "123";
+	string chislo1 = "183";
 	string chislo2 = "321";
 	string chislo3 = "000";
 	Octal a(chislo1);
 	Octal b(chislo2);
 
-	Octal c(3);
+	Octal c = b + a;
 	
 	cout << "a ";
 	a.print();
@@ -265,17 +278,15 @@ int main()
 	cout << "b ";
 	b.print();
 
-	cout << "\n Indexing: a[0] =" << a[0];
+	cout << "\n Indexing: a[0] = " << a[0];
 
 	cout << "\n\nEquality: ";
 	if (a == b) cout << "\na = b";
 	else cout << "\n  a != b";
 
 	cout << "\nSum:\n";
-	c = a - b;
+	//c = a - b;
 	c.print();
-
-
 
 	_getch();
 	return 0;
